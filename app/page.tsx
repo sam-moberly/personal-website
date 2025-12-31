@@ -30,20 +30,14 @@ export default function Home() {
         </div>
 
         <div className="section">
-          <h2>Education</h2>
           <p>
-            <strong>Cal Poly San Luis Obispo</strong><br />
-            B.S. Mechanical Engineering<br />
-            Minor in Entrepreneurship
+            I studied at <a href="https://www.calpoly.edu" target="_blank" rel="noopener noreferrer" className="inline-link">Cal Poly San Luis Obispo</a>, where I earned a B.S. in Mechanical Engineering with a minor in Entrepreneurship.
           </p>
         </div>
 
         <div className="section">
-          <h2>Internships</h2>
           <p>
-            Medtronic (2022)<br />
-            Endologix (2021)<br />
-            Micro-Vu (2017-2020)
+            During college breaks I interned at <a href="https://www.medtronic.com" target="_blank" rel="noopener noreferrer" className="inline-link">Medtronic</a> (2022), <a href="https://www.endologix.com" target="_blank" rel="noopener noreferrer" className="inline-link">Endologix</a> (2021), and <a href="https://www.microvu.com" target="_blank" rel="noopener noreferrer" className="inline-link">Micro-Vu</a> (2017-2020).
           </p>
         </div>
 

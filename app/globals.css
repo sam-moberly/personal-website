@@ -86,6 +86,13 @@ h1 {
   height: 18px;
 }
 
+.connect-links {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 30px 25px;

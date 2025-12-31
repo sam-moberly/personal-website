@@ -42,7 +42,7 @@ export default function Home() {
 
       <div className="section">
         <h2>Connect</h2>
-        <p>
+        <div className="connect-links">
           <a 
             href="https://www.linkedin.com/in/samanthamoberly/" 
             target="_blank" 
@@ -59,7 +59,6 @@ export default function Home() {
             </svg>
             LinkedIn
           </a>
-          <br />
           <a 
             href="mailto:sam.moberly99@gmail.com" 
             className="link email-link"
@@ -77,7 +76,7 @@ export default function Home() {
             </svg>
             Email
           </a>
-        </p>
+        </div>
       </div>
     </main>
   )

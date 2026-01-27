@@ -23,7 +23,7 @@ export default function Home() {
           Previously, I was a mechanical design engineer at{' '}
           <a href="https://www.microvu.com" target="_blank" rel="noopener noreferrer" className="inline-link">Micro-Vu</a>, 
           and I founded a community-based{' '}
-          <a href="https://socialspark.co/homepagewelcome" target="_blank" rel="noopener noreferrer" className="inline-link">startup</a> out of college. 
+          startup out of college. 
           I love to build in environments that are fast-paced and challenge the status quo.
         </p>
       </div>

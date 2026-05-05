@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import { track } from '@vercel/analytics'
 
 export default function Home() {
   return (
@@ -19,9 +22,25 @@ export default function Home() {
       <div className="section">
         <p>
           I'm currently working in business operations and strategy at{' '}
-          <a href="https://cursor.com" target="_blank" rel="noopener noreferrer" className="inline-link">Cursor</a>. 
+          <a
+            href="https://cursor.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-link"
+            onClick={() => track('link_click', { destination: 'cursor', location: 'bio' })}
+          >
+            Cursor
+          </a>.{' '}
           Previously, I was a mechanical design engineer at{' '}
-          <a href="https://www.microvu.com" target="_blank" rel="noopener noreferrer" className="inline-link">Micro-Vu</a>, 
+          <a
+            href="https://www.microvu.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-link"
+            onClick={() => track('link_click', { destination: 'microvu', location: 'bio' })}
+          >
+            Micro-Vu
+          </a>,
           and I founded a community-based{' '}
           startup out of college. 
           I love to build in environments that are fast-paced and challenge the status quo.
@@ -30,13 +49,53 @@ export default function Home() {
 
       <div className="section">
         <p>
-          I studied at <a href="https://www.calpoly.edu" target="_blank" rel="noopener noreferrer" className="inline-link">Cal Poly San Luis Obispo</a>, where I earned a B.S. in Mechanical Engineering with a minor in Entrepreneurship.
+          I studied at{' '}
+          <a
+            href="https://www.calpoly.edu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-link"
+            onClick={() => track('link_click', { destination: 'calpoly', location: 'education' })}
+          >
+            Cal Poly San Luis Obispo
+          </a>
+          , where I earned a B.S. in Mechanical Engineering with a minor in Entrepreneurship.
         </p>
       </div>
 
       <div className="section">
         <p>
-          During summer breaks I interned at <a href="https://www.medtronic.com" target="_blank" rel="noopener noreferrer" className="inline-link">Medtronic</a> (2022), <a href="https://www.endologix.com" target="_blank" rel="noopener noreferrer" className="inline-link">Endologix</a> (2021), and <a href="https://www.microvu.com" target="_blank" rel="noopener noreferrer" className="inline-link">Micro-Vu</a> (2017-2020).
+          During summer breaks I interned at{' '}
+          <a
+            href="https://www.medtronic.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-link"
+            onClick={() => track('link_click', { destination: 'medtronic', location: 'internships' })}
+          >
+            Medtronic
+          </a>{' '}
+          (2022),{' '}
+          <a
+            href="https://www.endologix.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-link"
+            onClick={() => track('link_click', { destination: 'endologix', location: 'internships' })}
+          >
+            Endologix
+          </a>{' '}
+          (2021), and{' '}
+          <a
+            href="https://www.microvu.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-link"
+            onClick={() => track('link_click', { destination: 'microvu', location: 'internships' })}
+          >
+            Micro-Vu
+          </a>{' '}
+          (2017-2020).
         </p>
       </div>
 
@@ -48,6 +107,7 @@ export default function Home() {
             target="_blank" 
             rel="noopener noreferrer"
             className="link"
+            onClick={() => track('connect_click', { destination: 'linkedin' })}
           >
             <svg 
               width="20" 
@@ -64,6 +124,7 @@ export default function Home() {
             target="_blank" 
             rel="noopener noreferrer"
             className="link"
+            onClick={() => track('connect_click', { destination: 'x' })}
           >
             <svg 
               width="20" 
@@ -78,6 +139,7 @@ export default function Home() {
           <a 
             href="mailto:sam.moberly99@gmail.com" 
             className="link email-link"
+            onClick={() => track('connect_click', { destination: 'email' })}
           >
             <svg 
               width="20" 

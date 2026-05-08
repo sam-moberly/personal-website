@@ -29,10 +29,21 @@ body {
   padding: 35px 35px;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.photo {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 h1 {
   font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 20px;
   text-align: left;
   color: #1a1a1a;
 }

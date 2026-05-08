@@ -1,11 +1,22 @@
 'use client'
 
+import Image from 'next/image'
 import { track } from '@vercel/analytics'
 
 export default function Home() {
   return (
     <main className="container">
-      <h1>Samantha Moberly</h1>
+      <div className="header">
+        <Image
+          src="/headshot.jpg"
+          alt="Samantha Moberly"
+          width={60}
+          height={60}
+          className="photo"
+          priority
+        />
+        <h1>Samantha Moberly</h1>
+      </div>
       
       <div className="section">
         <p>
